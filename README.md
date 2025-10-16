@@ -28,6 +28,9 @@ A responsive number guessing game (1–100) with color feedback, guess history, 
 - HTML/CSS/JS only; no external libraries
 - Works in Chrome/Firefox; responsive on mobile/desktop
 
+## AI Usage Documentation
+I used ChatGPT to help with debugging layout issues and to clarify the LocalStorage logic.
+
 
 ## Challenges & What I Learned
 - Managing simple game state cleanly without a framework

@@ -7,18 +7,21 @@
 <link rel="stylesheet" href="./style.css?v=3" />
 </head>
 <body>
+ <!-- Navigation Header -->
 <header class="site-header">
-<nav class="topnav">
-<a href="index.html" class="brand">Number Quest</a>
-<a href="index.html" class="link">Home</a>
-</nav>
+  <nav class="topnav">
+    <a href="index.html" class="link">Home</a>
+  </nav>
 </header>
 
 
+<!-- Main Game Container -->
 <main class="container">
 <section class="grid game">
+<!-- Left Panel: Game Interface -->
 <div class="panel">
 <h1 class="h2">Guess the number (1–100)</h1>
+<!-- Guess Input Form -->
 <form id="guess-form" class="controls" autocomplete="off">
 <label for="guess" class="sr-only">Enter your guess</label>
 <input id="guess" name="guess" type="number" inputmode="numeric" min="1" max="100" placeholder="Enter 1–100" required />
@@ -26,16 +29,16 @@
 <button id="again" type="button" class="btn" aria-label="Play again">Play Again</button>
 </form>
 
-
+<!-- Game Status Info -->
 <div class="meta">
 <div>Attempts left: <span id="remaining">10</span></div>
 <div>Best score (fewest guesses): <span id="best">—</span></div>
 </div>
 
-
+<!-- Feedback Message -->
 <div class="feedback" id="feedback" aria-live="polite">Start guessing…</div>
 
-
+<!-- Difficulty Selector -->
 <div class="row">
 <label for="difficulty">Difficulty:</label>
 <select id="difficulty" name="difficulty">
@@ -45,14 +48,14 @@
 </select>
 </div>
 
-
+<!-- Guess History Section -->
 <details class="history">
 <summary>Guess history</summary>
 <ul id="history" class="history-list" aria-live="polite"></ul>
 </details>
 </div>
 
-
+<!-- Right Panel: Instructions -->
 <aside class="panel info">
   <h2 class="h3">How to play</h2>
   <ol class="bullet">
@@ -63,7 +66,7 @@
   </ol>
 </aside>
 </section>
-
+<!-- Footer -->
 <footer class="site-footer">© <span id="year"></span> Kalsoom Asif • CS195 Project 1</footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="./script.js?v=2" defer></script>
