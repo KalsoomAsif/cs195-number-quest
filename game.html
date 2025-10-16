@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Number Quest • Game</title>
+<link rel="stylesheet" href="./style.css?v=1" />
+</head>
+<body>
+<header class="site-header">
+<nav class="topnav">
+<a href="index.html" class="brand">Number Quest</a>
+<a href="index.html" class="link">Home</a>
+</nav>
+</header>
+
+
+<main class="container">
+<section class="grid game">
+<div class="panel">
+<h1 class="h2">Guess the number (1–100)</h1>
+<form id="guess-form" class="controls" autocomplete="off">
+<label for="guess" class="sr-only">Enter your guess</label>
+<input id="guess" name="guess" type="number" inputmode="numeric" min="1" max="100" placeholder="Enter 1–100" required />
+<button id="check" type="submit" class="btn primary">Check</button>
+<button id="again" type="button" class="btn" aria-label="Play again">Play Again</button>
+</form>
+
+
+<div class="meta">
+<div>Attempts left: <span id="remaining">10</span></div>
+<div>Best score (fewest guesses): <span id="best">—</span></div>
+</div>
+
+
+<div class="feedback" id="feedback" aria-live="polite">Start guessing…</div>
+
+
+<div class="row">
+<label for="difficulty">Difficulty:</label>
+<select id="difficulty" name="difficulty">
+<option value="easy">Easy (12 tries)</option>
+<option value="normal" selected>Normal (10 tries)</option>
+<option value="hard">Hard (6 tries)</option>
+</select>
+</div>
+
+
+<details class="history">
+<summary>Guess history</summary>
+<ul id="history" class="history-list" aria-live="polite"></ul>
+</details>
+</div>
+
+
+<aside class="panel info">
+<h2 class="h3">How to play</h2>
+<ol class="bullet">
+<li>Pick a number between 1 and 100.</li>
+<li>Click <strong>Check</strong>. You'll see <em>Higher</em> or <em>Lower</em> hints.</li>
+<li>Win by guessing correctly before attempts run out.</li>
+<li>Try to beat your <strong>Best Score</strong> — saved in your browser.</li>
+</ol>
+</aside>
+</section>
+
+<footer class="site-footer">© <span id="year"></span> Kalsoom Asif • CS195 Project 1</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="./script.js?v=2" defer></script>
+</body>
+</html>
+
