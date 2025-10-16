@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Number Quest • Landing</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+<h1>Number Quest</h1>
+<p class="tagline">Guess the secret number (1–100) before you run out of attempts.</p>
+</header>
+
+
+<main class="container landing">
+<section class="card">
+<h2>About the Game</h2>
+<p>
+A simple, fast number guessing game built with semantic HTML, CSS Grid/Flexbox,
+and vanilla JavaScript. It features color‑coded feedback, a guess history,
+difficulty levels, and a saved best score using <strong>localStorage</strong>.
+</p>
+<ul class="bullet">
+<li>Clear win/lose conditions</li>
+<li>Responsive design (phone + desktop)</li>
+<li>“Learn Something New” feature: saved <em>Best Score</em></li>
+</ul>
+<div class="actions">
+<a class="btn primary" href="game.html" aria-label="Play Number Quest now">▶ Play Game</a>
+<a class="btn" target="_blank" rel="noopener" href="https://github.com/KalsoomAsif/cs195-number-quest">View GitHub Repo</a>
+
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">© <span id="year"></span> Kalsoom Asif • CS195 Project 1</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
