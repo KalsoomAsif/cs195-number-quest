@@ -4,7 +4,7 @@ CS195 Project 1 — Number Guessing Game
 # Number Quest — CS195 Project 1
 
 
-A responsive number guessing game (1–100) with color feedback, guess history, difficulty modes, and a saved **Best Score** using LocalStorage. Built with semantic HTML, CSS Grid/Flexbox, and vanilla JavaScript.
+A responsive number guessing game (1–100) with color feedback, guess history, difficulty modes, and a saved **Best Score** using LocalStorage. Built with semantic HTML, CSS Grid/Flexbox, and basic JavaScript.
 
 
 ## How to Play
@@ -33,7 +33,7 @@ A responsive number guessing game (1–100) with color feedback, guess history, 
 - Managing simple game state cleanly without a framework
 - Designing accessible, responsive UI with clear feedback
 - Persisting small amounts of data with LocalStorage
+- How to make sure the live link shows exactly what you want it to show
 
-## Live Link
-- GitHub Pages:
-- Repo: 
+## Live Link:
+https://kalsoomasif.github.io/cs195-number-quest/
